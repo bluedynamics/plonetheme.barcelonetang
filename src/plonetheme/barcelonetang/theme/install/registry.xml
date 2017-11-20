@@ -7,6 +7,7 @@
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
       <element>aqua</element>
+      <element>bda</element>
       <element>blue</element>
       <element>brown</element>
       <element>green</element>
