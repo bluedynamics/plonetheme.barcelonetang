@@ -21,3 +21,6 @@ htmlcov/
 node_modules/
 parts/
 var/
+lib/
+local/
+include/
