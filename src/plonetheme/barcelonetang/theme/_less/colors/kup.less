@@ -5,8 +5,22 @@
 
 @import "../variables/base.less";
 @import "../variables/colors.less";
+
+@plone-gray-darker: lighten(#000, 10%);   // #333
+@plone-gray-dark: lighten(#000, 20%);   // #4c4c4c
+@plone-gray: lighten(#000, 36%);   // #696969
+@plone-gray-light: lighten(#000, 41.5%); // #767676 //discreet
+@plone-gray-lighter: lighten(#000, 75%);   // #ccc //disableds like
+
 @import "../variables/scaffolding.less";
 @import "../variables/typography.less";
+
+@plone-font-family-sans-serif: "DejaVu Sans", "Bitstream Vera Sans", Verdana, Geneva, Helvetica, sans-serif;
+@plone-font-family-condensed: "DejaVu Sans Condensed", "Arial Narrow", sans-serif;
+@plone-font-family-serif: "DejaVu Sans Condensed", Georgia, "Times New Roman", Times, serif;
+@plone-font-family-monospace: 'DejaVu Sans Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
+@plone-font-family-base: @plone-font-family-sans-serif;
+
 @import "../variables/components.less";
 @import "../variables/tables.less";
 @import "../variables/states.less";
@@ -24,3 +38,14 @@
 @import "../variables/toolbar.less";
 @import "../variables/dropdown.less";
 @import "_structure.less";
+
+h2.boxheading {
+    font-size: ceil((@plone-font-size-base * 1.1));
+    font-weight: bold;
+    padding: 1em;
+    background-color: @plone-gray-lighter;
+    img {
+        background-color: @plone-gray;
+        padding-right: 1em;
+    }
+}
